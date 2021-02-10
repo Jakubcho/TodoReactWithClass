@@ -1,13 +1,82 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./bg01.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modalBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  
+}
+.modalBoxInput {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.modalBoxInput input {
+  margin: 15px 0;
+  padding: 25;
+}
+.hideModal {
+  visibility: hidden;
+  height: 0;
+}
+.showModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  height: 100vh;
+}
+button {
+  color: white;
+  background-color: rgba(116, 122, 124, 0.8);
+  border-radius: 5%;
+  box-shadow: 1px 1px 0 0 black;
+  border: none;
+  margin: 5px 0;
+}
+.modalButton button {
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.todoBox {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 25px;
+}
+.todoBox h1 {
+  background-color: rgba(79, 140, 160, 0.863);
+  font-size: 2rem;
+  color: white;
+  padding: 15px 25px;
+  margin: 0 10px;
+}
+.todoElement {
+  background-color: rgba(79, 140, 160, 0.863);
+  margin: 10px 10px;
+  padding: 0 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+.todoElement button {
+  margin-bottom: 15px;
 }
